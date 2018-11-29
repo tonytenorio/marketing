@@ -1,0 +1,87 @@
+@charset "UTF-8";
+/*------------------------------
+1. TIPOGRAFIA DEL SITIO
+--------------------------------*/
+html {
+  font-size: 13px; }
+
+body {
+  font-family: 'Rubik', sans-serif;
+  color: #696969; }
+
+/*-------------------------------------------
+2. COLOR DE FONDO PRINCIPAL
+---------------------------------------------*/
+.bg-primary {
+  background-color: #337ab7 !important; }
+
+/*-------------------------------------------
+3. COLOR DEL TEXTO PRINCIPAL
+---------------------------------------------*/
+.text-primary {
+  color: #337ab7 !important; }
+
+/*------------------------------------------
+4. ESTILOS GENERALES DE BOTONES
+-------------------------------------------*/
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  padding: 1rem 2rem; }
+
+.btn:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.31); }
+
+.btn:after {
+  content: '\f0a9';
+  font-family: 'FontAwesome';
+  position: relative;
+  left: .5rem;
+  transition: all .2s ease; }
+
+.btn:hover:after {
+  left: 1rem;
+  transform: rotateZ(-360deg); }
+
+/*--------------------------------------------
+5. ESTILOS BOTON PRINCIPAL ".btn-primary"
+--------------------------------------------*/
+.btn-primary {
+  background-color: #337ab7 !important;
+  border-color: #285f8f !important; }
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #285f8f !important; }
+
+.btn-primary:active {
+  background-color: #1d4567 !important;
+  border-color: #122a3f !important; }
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(51, 122, 183, 0.5) !important; }
+
+/*-----------------------------------------
+6. SECCION BARRA DE NAVEGACIÓN ".navbar"
+------------------------------------------*/
+.btn-buscar {
+  padding: .6rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer; }
+
+/*Estilo Dropdown*/
+.dropdown-menu {
+  border: 1px solid #337ab7;
+  border-top-width: 5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); }
+
+.dropdown-menu a i {
+  font-size: .85rem;
+  margin-right: .5rem; }
