@@ -36,7 +36,8 @@ body {
 
 .btn:after {
   content: '\f0a9';
-  font-family: 'FontAwesome';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
   position: relative;
   left: .5rem;
   transition: all .2s ease; }
@@ -85,3 +86,82 @@ body {
 .dropdown-menu a i {
   font-size: .85rem;
   margin-right: .5rem; }
+
+/*--------------------------------------------
+7. SECCION CAJA DE BUSQUEDA "#buscador-modal"
+---------------------------------------------*/
+#buscador-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  background: rgba(255, 255, 255, 0.86);
+  z-index: 1000;
+  display: none; }
+
+.btn-cerrar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #337ab7;
+  font-size: 3rem; }
+
+#nombre {
+  height: auto;
+  border-radius: 3rem 0 0 3rem;
+  font-size: 1.5rem;
+  padding: 1rem; }
+
+#buscar:after {
+  content: ''; }
+
+#buscar {
+  border-radius: 0 3rem 3rem 0;
+  font-size: 1.5rem; }
+
+/*---------------------------------------------
+8. ESTILOS PRESENTACIÓN "#presentacion"
+----------------------------------------------*/
+#presentacion {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.bienvenidos {
+  flex-grow: 1; }
+
+/*ESTILOS PARA INTERNET EXPLORER 11+*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body {
+    display: flex;
+    flex-direction: column; }
+
+  .navbar {
+    min-height: 1px; } }
+/*---------------------------------------------
+9. ESTILOS BIENVENIDOS ".bienvenidos"
+----------------------------------------------*/
+.bienvenidos {
+  background: url("../images/fondo-bienvenidos.png") no-repeat center center/cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center; }
+
+.bienvenidos:before {
+  content: "";
+  background: rgba(0, 0, 0, 0.41);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.bienvenidos .btn {
+  width: 70%;
+  margin-bottom: .5rem;
+  text-transform: uppercase; }

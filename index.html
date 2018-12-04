@@ -19,98 +19,163 @@
   </head>
   <body>
 
+    <!-- VENTANA MODAL PARA EL BUSCADOR -->
+    <section id="buscador-modal">
+        <div class="d-flex justify-content-center align-items-center w-100 h-100">
+            <a href="#" class="btn-cerrar"><i class="fas fa-times"></i></a>
+    
+            <form action="#" method="get" class="m-0 container d-flex">
+                <input type="text" id="nombre" class="form-control" placeholder="Ingrese su búsqueda">
+                <button type="button" id="buscar" class="btn btn-primary px-sm-5">
+                    <i class="fas fa-search"></i><span class="d-none d-md-inline-block ml-3">Buscar</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
     <!-- #presentacion -->
     <header id="presentacion">
-      <section class="barra-contacto bg-dark text-light py-2">
-          <div class="container">
-              <div class="row justify-content-between justify-content-md-end">
-                  <div class="col-auto"><i class="fas fa-phone fa-flip-horizontal mr-2"></i>+511 917 338 6831</div>
-                  <div class="col-auto"><i class="fas fa-envelope fa-flip-horizontal mr-2"></i>info@aulaideal.com</div>
-              </div>
-          </div>
-      </section>
-
-      <nav class="navbar navbar-light bg-light navbar-expand-md py-3">
-        <div class="container">
-            <a href="#" class="navbar-brand">
-                <img src="images/logo.svg" alt="Logo del sitio" width="155">
-            </a>
-    
-            <button type="button" class="navbar-toggler ml-auto mr-2" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false" aria-label="Botón menú">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <button type="button" class="btn-buscar order-md-1">
-                <i class="fas fa-search"></i>
-            </button>
-    
-            <div class="collapse navbar-collapse" id="menu-principal">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a href="#" class="nav-link">Inicio</a></li>
-    
-                    <li class="nav-item dropdown">
-    
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="item-menu-nosotros"><i class="far fa-bell mr-1"></i>Nosotros</a>
-    
-                        <div class="dropdown-menu" aria-labelledby="item-menu-nosotros">
-                            <a href="#" class="dropdown-item"><i class="far fa-calendar-alt"></i>Visión</a>
-                            <a href="#" class="dropdown-item"><i class="fas fa-bullseye"></i>Misión</a>
-                            <a href="#" class="dropdown-item"><i class="fas fa-landmark "></i>Historia</a>
-                        </div>
-                    </li>
-    
-                    <li class="nav-item dropdown mega-menu">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="item-menu-servicios"><i class="fas fa-bullhorn mr-1"></i>Servicios</a>
-                        <div class="dropdown-menu" aria-labelledby="item-menu-servicios">
-                            <section class="row px-2">
-    
-                                <div class="col-12 col-sm-6 col-xl-3 mb-2">
-                                    <h6 class="dropdown-header border-bottom mb-2">PÁGINAS WEB</h6>
-                                    <a href="#" class="dropdown-item"><i class="fas fa-chart-line"></i>Diseño Web</a>
-                                    <a href="#" class="dropdown-item"><i class="fas fa-cloud-download-alt"></i>Tiendas online</a>
-                                    <a href="#" class="dropdown-item"><i class="fas fa-external-link-square-alt"></i>Pasarela de pagos</a>
-                                    <a href="#" class="dropdown-item"><i class="fas fa-history"></i>Hosting y Dominios</a>
-                                </div>
-    
-                                <div class="col-12 col-sm-6 col-xl-3 mb-2">
-                                    <h6 class="dropdown-header border-bottom mb-2">MARKETING ONLINE</h6>
-                                    <a href="#" class="dropdown-item"><i class="fas fa-location-arrow"></i>SEO</a>
-                                    <a href="#" class="dropdown-item"><i class="far fa-hand-point-right"></i>Google Adword</a>
-                                    <a href="#" class="dropdown-item"><i class="fas fa-external-link-square-alt"></i>Facebook Ads</a>
-                                    <a href="#" class="dropdown-item"><i class="fas fa-arrow-alt-circle-right"></i>Email Marketing</a>
-                                </div>
-    
-                                <div class="col-12 col-sm-6 col-xl-3 mb-2">
-                                    <h6 class="dropdown-header border-bottom mb-2">BRANDING</h6>
-                                    <a href="#" class="dropdown-item"><i class="fas fa-chess-knight"></i>Logotipo</a>
-                                    <a href="#" class="dropdown-item"><i class="fas fa-chess-pawn"></i>Videos</a>
-                                    <a href="#" class="dropdown-item"><i class="fas fa-chess-queen"></i>Tarjetas</a>
-                                    <a href="#" class="dropdown-item"><i class="fas fa-chess-rook"></i>Brochure</a>
-                                </div>
-    
-                                <div class="col-12 col-sm-6 col-xl-3">
-                                    <h6 class="dropdown-header border-bottom mb-2">SOCIAL MEDIA</h6>
-                                    <a href="#" class="dropdown-item"><i class="far fa-comment"></i>Plan de Marketing</a>
-                                    <a href="#" class="dropdown-item"><i class="far fa-envelope"></i>Estratégia Digital</a>
-                                    <a href="#" class="dropdown-item"><i class="far fa-comments"></i>Comunity Manager</a>
-                                    <a href="#" class="dropdown-item"><i class="far fa-paper-plane"></i>Optimización</a>
-                                </div>
-                            </section>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Proyectos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-                </ul>
+        <section class="barra-contacto bg-dark text-light py-2">
+            <div class="container">
+                <div class="row justify-content-between justify-content-md-end">
+                    <div class="col-auto"><i class="fas fa-phone fa-flip-horizontal mr-2"></i>+511 917 338 6831</div>
+                    <div class="col-auto"><i class="fas fa-envelope fa-flip-horizontal mr-2"></i>info@aulaideal.com</div>
+                </div>
             </div>
-        </div>
-      </nav>
-          
+        </section>
 
+        <nav class="navbar navbar-light bg-light navbar-expand-md py-3">
+            <div class="container">
+                <a href="#" class="navbar-brand">
+                    <img src="images/logo.svg" alt="Logo del sitio" width="155">
+                </a>
+        
+                <button type="button" class="navbar-toggler ml-auto mr-2" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false" aria-label="Botón menú">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <button type="button" class="btn-buscar order-md-1">
+                    <i class="fas fa-search"></i>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="menu-principal">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a href="#" class="nav-link">Inicio</a></li>
+        
+                        <li class="nav-item dropdown">
+        
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="item-menu-nosotros"><i class="far fa-bell mr-1"></i>Nosotros</a>
+        
+                            <div class="dropdown-menu" aria-labelledby="item-menu-nosotros">
+                                <a href="#" class="dropdown-item"><i class="far fa-calendar-alt"></i>Visión</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-bullseye"></i>Misión</a>
+                                <a href="#" class="dropdown-item"><i class="fas fa-landmark "></i>Historia</a>
+                            </div>
+                        </li>
+        
+                        <li class="nav-item dropdown mega-menu">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="item-menu-servicios"><i class="fas fa-bullhorn mr-1"></i>Servicios</a>
+                            <div class="dropdown-menu" aria-labelledby="item-menu-servicios">
+                                <section class="row px-2">
+        
+                                    <div class="col-12 col-sm-6 col-xl-3 mb-2">
+                                        <h6 class="dropdown-header border-bottom mb-2">PÁGINAS WEB</h6>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-chart-line"></i>Diseño Web</a>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-cloud-download-alt"></i>Tiendas online</a>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-external-link-square-alt"></i>Pasarela de pagos</a>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-history"></i>Hosting y Dominios</a>
+                                    </div>
+        
+                                    <div class="col-12 col-sm-6 col-xl-3 mb-2">
+                                        <h6 class="dropdown-header border-bottom mb-2">MARKETING ONLINE</h6>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-location-arrow"></i>SEO</a>
+                                        <a href="#" class="dropdown-item"><i class="far fa-hand-point-right"></i>Google Adword</a>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-external-link-square-alt"></i>Facebook Ads</a>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-arrow-alt-circle-right"></i>Email Marketing</a>
+                                    </div>
+        
+                                    <div class="col-12 col-sm-6 col-xl-3 mb-2">
+                                        <h6 class="dropdown-header border-bottom mb-2">BRANDING</h6>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-chess-knight"></i>Logotipo</a>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-chess-pawn"></i>Videos</a>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-chess-queen"></i>Tarjetas</a>
+                                        <a href="#" class="dropdown-item"><i class="fas fa-chess-rook"></i>Brochure</a>
+                                    </div>
+        
+                                    <div class="col-12 col-sm-6 col-xl-3">
+                                        <h6 class="dropdown-header border-bottom mb-2">SOCIAL MEDIA</h6>
+                                        <a href="#" class="dropdown-item"><i class="far fa-comment"></i>Plan de Marketing</a>
+                                        <a href="#" class="dropdown-item"><i class="far fa-envelope"></i>Estratégia Digital</a>
+                                        <a href="#" class="dropdown-item"><i class="far fa-comments"></i>Comunity Manager</a>
+                                        <a href="#" class="dropdown-item"><i class="far fa-paper-plane"></i>Optimización</a>
+                                    </div>
+                                </section>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Proyectos</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="bienvenidos">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="display-4 font-weight-bold">MARKETING ESTRATÉGICO</h1>
+                        <p class="h1 mb-4">Te ayudamos a conseguir
+                            <br class="d-md-none">
+                            <span class="typed border-bottom font-weight-bold"></span>
+                        </p>
+                        <a href="#" class="btn btn-primary btn-lg">Contáctanos</a>
+                        <a href="#" class="btn btn-outline-light btn-lg">Proyectos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
     </header>
     
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- CARGAR DE JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- CARGA DE POPPER JS NECESARIO PARA EL COMPONENTE DROPDOWN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- CARGA DE BOOTSTRAP JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>    
-  </body>
+    <!-- CARGA DE TYPED.JS -->
+    <script src="js/typed.min.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            /*Función 1: Megamenu se mantiene visible*/
+            $('.mega-menu .dropdown-menu').click(function(n){
+                n.stopPropagation();
+            });
+
+            /*Función 2: Mostar y ocultar ventana modal del buscador*/
+            $('.btn-buscar').click(function(){
+                $('#buscador-modal').fadeIn();
+            });
+
+            $('.btn-cerrar').click(function(){
+                $('#buscador-modal').fadeOut();
+            });
+
+            /*Función 3: Iniciamos el script Typed.js*/
+            var typed = new Typed('.typed', {
+            strings: ["Más clientes ^2000", "Más ventas ^2000","Más visibilidad ^4000"],
+            smartBackspace: false,
+            loop: true,
+            showCursor:true,
+            cursorChar:"|",
+            typeSpeed: 50,
+            backSpeed: 30,
+            startDelay:800
+            });
+        })
+    </script>
+</body>
 </html>
