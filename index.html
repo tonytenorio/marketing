@@ -231,7 +231,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <a href="#" class="proyecto">
                         <div class="mascara">
-                            <h3>Coworking Perú</h3>
+                            <h3>Coworking CR</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nihil sequi.</p>
                             <span class="btn btn-outline-light">Ver proyecto</span>
                         </div>
@@ -241,6 +241,13 @@
             </div>
         </div>
     </section>
+
+    <!-- Pie de pagina -->
+    <footer id="piedepagina" class="bg-dark text-white py-3 small text-center text-md-right ">
+        <div class="container">
+            <span id="year"></span> © MARKETING. Todos los derechos reservados.  
+        </div>
+    </footer>
     
     <!-- CARGAR DE JQUERY -->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -270,15 +277,17 @@
 
             /*Función 3: Iniciamos el script Typed.js*/
             var typed = new Typed('.typed', {
-            strings: ["Más clientes ^2000", "Más ventas ^2000","Más visibilidad ^4000"],
-            smartBackspace: false,
-            loop: true,
-            showCursor:true,
-            cursorChar:"|",
-            typeSpeed: 50,
-            backSpeed: 30,
-            startDelay:800
+                strings: ["Más clientes ^2000", "Más ventas ^2000","Más visibilidad ^4000"],
+                smartBackspace: false,
+                loop: true,
+                showCursor:true,
+                cursorChar:"|",
+                typeSpeed: 50,
+                backSpeed: 30,
+                startDelay:800
             });
+
+            $('#year').text(new Date().getFullYear());
         })
     </script>
 </body>
