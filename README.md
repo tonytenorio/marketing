@@ -1,4 +1,4 @@
-# Startup Websites
+# Startup Website
 
 This project was generated with Bootstrap 4, HTML5, CSS 3, JQuery & Typed.
 
